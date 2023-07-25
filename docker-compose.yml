@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nextjs:
+    command: npm run start
+    build: .
+    volumes:
+      - .:/nextjs1
+      - /nextjs1/node_modules
+    ports:
+      - "3002:3002"
